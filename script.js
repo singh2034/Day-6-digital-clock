@@ -2,7 +2,7 @@ setInterval(function () {
   let currentDateTime = new Date();
   // Date
   let currentDate = currentDateTime.getDate();
-  let currentMonth = currentDateTime.getMonth();
+  let currentMonth = currentDateTime.getMonth() + 1; //in JS January is indexed at 0 and Feb at 1 hence, + 1.
   let currentYear = currentDateTime.getFullYear();
   if (currentDate < 10) {
     currentDate = "0" + currentDate;
